@@ -16,12 +16,12 @@ repository once in a while (`git push origin master`).
 
 Other important guidelines:
 
-1. Please give your file (or folder) an informative name.
++ Give your file (or folder) an informative name.
 
-2. Add comments to the top of your file describing what the code does,
-and how to use it.
++ Add comments to the top of your file describing what the code does,
+  and how to use it.
 
-3. If you have multiple files in a folder, please add a README (either
-in plain text or in
-[Markdown](http://daringfireball.net/projects/markdown/syntax)).
++ If you have multiple files in a folder, please add a README (either
+  in plain text or in
+  [Markdown](http://daringfireball.net/projects/markdown/syntax)).
 
