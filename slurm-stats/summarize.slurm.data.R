@@ -19,7 +19,8 @@ slurm[rows,"ReqMem"] <- slurm[rows,"ReqMem"] / slurm[rows,"NCPUsPerNode"]
 # computation time (CPU x hours) for the selected partitions.
 trellis.par.set(par.main.text = list(cex = 0.75,font = 1),
                 axis.text = list(cex = 0.65),
-                .axis.text = list(cex = 0.65))
+                par.xlab.text = list(cex = 0.75),
+                par.ylab.text = list(cex = 0.75))
 partitions <- c("broadwl","sandyb","bigmem","bigmem2")
 n          <- length(partitions)
 for (i in 1:n) {
@@ -30,7 +31,8 @@ for (i in 1:n) {
   counts[is.na(counts)] <- 0
   print(barchart(counts,horizontal = FALSE,col = "navyblue",box.width = 0.6,
                  lwd = 0,scales = list(x = list(labels = bins[-1])),
-                 xlab = "",ylab = "",main = partitions[i]),
+                 xlab = "GB/CPU",ylab = "total CPU x hours",
+                 main = partitions[i]),
         split = c(i,1,4,1),
         more = (i < n))
 }
